@@ -1,0 +1,24 @@
+obj-unix/release/./deps/glslang/glslang/glslang/MachineIndependent/iomapper.o: \
+ deps/glslang/glslang/glslang/MachineIndependent/iomapper.cpp \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/PoolAlloc.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/InfoSink.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/iomapper.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Public/../Include/ResourceLimits.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Public/../MachineIndependent/Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/LiveTraverser.h \
+ deps/glslang/glslang/glslang/MachineIndependent/reflection.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/Types.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/BaseTypes.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/arrays.h \
+ deps/glslang/glslang/glslang/MachineIndependent/localintermediate.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/intermediate.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/Types.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/ConstantUnion.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/../Include/BaseTypes.h \
+ deps/glslang/glslang/glslang/MachineIndependent/Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/gl_types.h

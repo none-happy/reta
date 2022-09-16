@@ -1,0 +1,30 @@
+obj-unix/release/./deps/glslang/glslang/glslang/MachineIndependent/preprocessor/PpAtom.o: \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/PpAtom.cpp \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/PpContext.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../ParseHelper.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../parseVersions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Public/../Include/ResourceLimits.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Public/../MachineIndependent/Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/InfoSink.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/PoolAlloc.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../Scan.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/ShHandle.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../MachineIndependent/Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/InfoSink.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../SymbolTable.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/intermediate.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/Types.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/../Include/BaseTypes.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/arrays.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/../Include/ConstantUnion.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../localintermediate.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../attribute.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/../../Include/ConstantUnion.h \
+ deps/glslang/glslang/glslang/MachineIndependent/preprocessor/PpTokens.h

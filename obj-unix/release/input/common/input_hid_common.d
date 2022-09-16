@@ -1,0 +1,41 @@
+obj-unix/release/input/common/input_hid_common.o: \
+ input/common/input_hid_common.c input/common/../include/gamepad.h \
+ input/common/../include/../input_driver.h \
+ libretro-common/include/boolean.h \
+ libretro-common/include/retro_common_api.h \
+ libretro-common/include/retro_inline.h \
+ libretro-common/include/libretro.h \
+ libretro-common/include/retro_miscellaneous.h \
+ input/common/../include/../../config.h \
+ input/common/../include/../input_defines.h \
+ input/common/../include/../input_types.h \
+ input/common/../include/../../msg_hash.h \
+ input/common/../include/../../input/input_defines.h \
+ input/common/../include/../input_overlay.h \
+ libretro-common/include/formats/image.h \
+ libretro-common/include/queues/task_queue.h \
+ libretro-common/include/retro_common.h \
+ libretro-common/include/compat/msvc.h \
+ input/common/../include/../input_osk.h deps/7zip/../../config.h \
+ input/common/../include/../include/hid_types.h \
+ input/common/../include/../include/hid_driver.h \
+ input/common/../include/../include/../connect/joypad_connection.h \
+ libretro-common/include/retro_endianness.h \
+ input/common/../include/../include/../connect/../input_driver.h \
+ input/common/../include/../include/../input_driver.h \
+ input/common/../include/../include/gamepad.h \
+ input/common/../include/../../configuration.h \
+ input/common/../include/../../config.h \
+ input/common/../include/../../gfx/video_defines.h \
+ input/common/../include/../../led/led_defines.h \
+ input/common/../include/../../msg_hash.h \
+ input/common/../include/../../performance_counters.h \
+ libretro-common/include/features/features_cpu.h \
+ input/common/../include/../../command.h \
+ libretro-common/include/streams/interface_stream.h \
+ input/common/../include/../../retroarch_types.h \
+ input/common/../include/../../menu/menu_defines.h \
+ input/common/../include/../../menu/../audio/audio_defines.h \
+ input/common/../include/../../disk_control_interface.h \
+ input/common/../include/../../disk_index_file.h \
+ input/common/../include/../../configuration.h

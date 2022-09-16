@@ -1,0 +1,139 @@
+obj-unix/release/frontend/drivers/platform_unix.o: \
+ frontend/drivers/platform_unix.c deps/feralgamemode/gamemode_client.h \
+ frontend/drivers/../../libretro-common/lists/vector_list.c \
+ libretro-common/include/boolean.h frontend/drivers/../../config.h \
+ libretro-common/include/retro_dirent.h \
+ libretro-common/include/libretro.h \
+ libretro-common/include/retro_common_api.h \
+ libretro-common/include/retro_inline.h \
+ libretro-common/include/compat/strl.h \
+ libretro-common/include/compat/../../../config.h \
+ libretro-common/include/compat/fopen_utf8.h \
+ libretro-common/include/lists/file_list.h \
+ libretro-common/include/file/file_path.h \
+ libretro-common/include/streams/file_stream.h \
+ libretro-common/include/vfs/vfs_implementation.h \
+ libretro-common/include/retro_environment.h \
+ libretro-common/include/vfs/vfs.h \
+ libretro-common/include/string/stdstring.h \
+ libretro-common/include/queues/task_queue.h \
+ libretro-common/include/retro_common.h \
+ libretro-common/include/compat/msvc.h \
+ libretro-common/include/retro_timers.h \
+ libretro-common/include/features/features_cpu.h \
+ frontend/drivers/../frontend.h frontend/drivers/../frontend_driver.h \
+ libretro-common/include/lists/string_list.h \
+ frontend/drivers/../../defaults.h \
+ libretro-common/include/retro_miscellaneous.h \
+ frontend/drivers/../../playlist.h frontend/drivers/../../core_info.h \
+ frontend/drivers/../../retroarch.h frontend/drivers/../../config.h \
+ libretro-common/include/queues/message_queue.h \
+ frontend/drivers/../../gfx/video_driver.h \
+ frontend/drivers/../../gfx/../config.h \
+ libretro-common/include/rthreads/rthreads.h \
+ libretro-common/include/gfx/scaler/pixconv.h \
+ libretro-common/include/clamping.h \
+ libretro-common/include/gfx/scaler/scaler.h \
+ frontend/drivers/../../gfx/../configuration.h \
+ frontend/drivers/../../gfx/../config.h \
+ frontend/drivers/../../gfx/../gfx/video_defines.h \
+ frontend/drivers/../../gfx/../led/led_defines.h \
+ frontend/drivers/../../gfx/../msg_hash.h \
+ frontend/drivers/../../gfx/../input/input_defines.h \
+ frontend/drivers/../../gfx/../input/input_driver.h \
+ frontend/drivers/../../gfx/../input/../config.h \
+ frontend/drivers/../../gfx/../input/input_defines.h \
+ frontend/drivers/../../gfx/../input/input_types.h \
+ frontend/drivers/../../gfx/../input/../msg_hash.h \
+ frontend/drivers/../../gfx/../input/input_overlay.h \
+ libretro-common/include/formats/image.h \
+ frontend/drivers/../../gfx/../input/input_osk.h deps/7zip/../../config.h \
+ frontend/drivers/../../gfx/../input/include/hid_types.h \
+ frontend/drivers/../../gfx/../input/include/hid_driver.h \
+ frontend/drivers/../../gfx/../input/include/../connect/joypad_connection.h \
+ libretro-common/include/retro_endianness.h \
+ frontend/drivers/../../gfx/../input/include/../connect/../input_driver.h \
+ frontend/drivers/../../gfx/../input/include/../input_driver.h \
+ frontend/drivers/../../gfx/../input/include/gamepad.h \
+ frontend/drivers/../../gfx/../input/../configuration.h \
+ frontend/drivers/../../gfx/../input/../performance_counters.h \
+ frontend/drivers/../../gfx/../input/../command.h \
+ frontend/drivers/../../gfx/../input/../config.h \
+ libretro-common/include/streams/interface_stream.h \
+ frontend/drivers/../../gfx/../input/../retroarch_types.h \
+ frontend/drivers/../../gfx/../input/../menu/menu_defines.h \
+ frontend/drivers/../../gfx/../input/../menu/../audio/audio_defines.h \
+ frontend/drivers/../../gfx/../input/../input/input_defines.h \
+ frontend/drivers/../../gfx/../input/../disk_control_interface.h \
+ frontend/drivers/../../gfx/../input/../disk_index_file.h \
+ frontend/drivers/../../gfx/../input/../configuration.h \
+ frontend/drivers/../../gfx/../input/input_types.h \
+ frontend/drivers/../../gfx/video_defines.h \
+ frontend/drivers/../../gfx/video_layout.h \
+ frontend/drivers/../../gfx/video_layout/types.h \
+ frontend/drivers/../../gfx/video_crt_switch.h \
+ frontend/drivers/../../gfx/video_coord_array.h \
+ frontend/drivers/../../gfx/video_shader_parse.h \
+ libretro-common/include/file/config_file.h \
+ frontend/drivers/../../gfx/video_filter.h frontend/drivers/../../core.h \
+ frontend/drivers/../../retroarch_types.h \
+ frontend/drivers/../../runloop.h libretro-common/include/dynamic/dylib.h \
+ config.h frontend/drivers/../../dynamic.h \
+ frontend/drivers/../../configuration.h \
+ frontend/drivers/../../core_option_manager.h \
+ libretro-common/include/lists/nested_list.h \
+ frontend/drivers/../../performance_counters.h \
+ frontend/drivers/../../state_manager.h \
+ frontend/drivers/../../tasks/tasks_internal.h \
+ frontend/drivers/../../tasks/../config.h \
+ frontend/drivers/../../tasks/../core_updater_list.h \
+ frontend/drivers/../../tasks/../playlist.h \
+ frontend/drivers/../../tasks/../core_backup.h \
+ frontend/drivers/../../tasks/../input/input_overlay.h \
+ frontend/drivers/../../verbosity.h frontend/drivers/../../paths.h \
+ frontend/drivers/../../msg_hash.h frontend/drivers/platform_unix.h \
+ frontend/drivers/../../config.def.h \
+ libretro-common/include/audio/audio_resampler.h \
+ frontend/drivers/../../gfx/video_defines.h \
+ frontend/drivers/../../input/input_driver.h \
+ frontend/drivers/../../network/netplay/netplay.h \
+ frontend/drivers/../../network/netplay/../../config.h \
+ libretro-common/include/net/net_compat.h \
+ frontend/drivers/../../network/netplay/../../msg_hash.h \
+ frontend/drivers/../../network/netplay/../natt.h \
+ libretro-common/include/net/net_socket.h \
+ frontend/drivers/../../menu/menu_screensaver.h \
+ frontend/drivers/../../menu/../retroarch.h \
+ frontend/drivers/../../menu/../gfx/gfx_display.h \
+ libretro-common/include/gfx/math/matrix_4x4.h \
+ libretro-common/include/gfx/math/vector_3.h \
+ frontend/drivers/../../menu/../gfx/../retroarch.h \
+ frontend/drivers/../../menu/../gfx/../gfx/font_driver.h \
+ frontend/drivers/../../menu/../gfx/../gfx/../retroarch.h \
+ frontend/drivers/../../menu/../gfx/../gfx/video_defines.h \
+ frontend/drivers/../../menu/../gfx/gfx_animation.h \
+ frontend/drivers/../../menu/../gfx/font_driver.h \
+ deps/../input/input_overlay.h frontend/drivers/../../runtime_file.h \
+ frontend/drivers/../../menu/menu_driver.h \
+ frontend/drivers/../../menu/../config.h \
+ frontend/drivers/../../menu/menu_defines.h \
+ frontend/drivers/../../menu/menu_dialog.h \
+ frontend/drivers/../../menu/../msg_hash.h \
+ frontend/drivers/../../menu/menu_input.h \
+ frontend/drivers/../../menu/../input/input_types.h \
+ frontend/drivers/../../menu/../input/input_driver.h \
+ frontend/drivers/../../menu/../performance_counters.h \
+ frontend/drivers/../../menu/../input/input_osk.h \
+ frontend/drivers/../../menu/menu_input_bind_dialog.h \
+ frontend/drivers/../../menu/menu_entries.h \
+ frontend/drivers/../../menu/menu_setting.h \
+ frontend/drivers/../../menu/../setting_list.h \
+ frontend/drivers/../../menu/../command.h \
+ frontend/drivers/../../menu/../msg_hash.h \
+ frontend/drivers/../../menu/menu_displaylist.h \
+ frontend/drivers/../../menu/../configuration.h \
+ frontend/drivers/../../menu/menu_shader.h \
+ frontend/drivers/../../menu/../gfx/video_shader_parse.h \
+ frontend/drivers/../../menu/../gfx/font_driver.h \
+ frontend/drivers/../../menu/menu_driver.h \
+ frontend/drivers/../../menu/menu_entries.h

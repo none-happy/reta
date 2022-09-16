@@ -1,0 +1,31 @@
+obj-unix/release/./deps/glslang/glslang/SPIRV/GlslangToSpv.o: \
+ deps/glslang/glslang/SPIRV/GlslangToSpv.cpp \
+ deps/glslang/glslang/SPIRV/spirv.hpp \
+ deps/glslang/glslang/SPIRV/GlslangToSpv.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/intermediate.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/Common.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/PoolAlloc.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/Types.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/../Include/Common.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/../Include/BaseTypes.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/../Public/ShaderLang.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/../Public/../Include/ResourceLimits.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/../Public/../MachineIndependent/Versions.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/arrays.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/../Include/ConstantUnion.h \
+ deps/glslang/glslang/SPIRV/Logger.h \
+ deps/glslang/glslang/SPIRV/SpvBuilder.h \
+ deps/glslang/glslang/SPIRV/spvIR.h \
+ deps/glslang/glslang/SPIRV/GLSL.std.450.h \
+ deps/glslang/glslang/SPIRV/GLSL.ext.KHR.h \
+ deps/glslang/glslang/SPIRV/GLSL.ext.EXT.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/localintermediate.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/../Include/intermediate.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/../Public/ShaderLang.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/Versions.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/SymbolTable.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/../Include/Common.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/../Include/InfoSink.h \
+ deps/glslang/glslang/SPIRV/../glslang/MachineIndependent/../Include/../Include/Common.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/Common.h \
+ deps/glslang/glslang/SPIRV/../glslang/Include/revision.h

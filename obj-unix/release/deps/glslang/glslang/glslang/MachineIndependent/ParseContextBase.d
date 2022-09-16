@@ -1,0 +1,28 @@
+obj-unix/release/./deps/glslang/glslang/glslang/MachineIndependent/ParseContextBase.o: \
+ deps/glslang/glslang/glslang/MachineIndependent/ParseContextBase.cpp \
+ deps/glslang/glslang/glslang/MachineIndependent/ParseHelper.h \
+ deps/glslang/glslang/glslang/MachineIndependent/parseVersions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Public/../Include/ResourceLimits.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Public/../MachineIndependent/Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/InfoSink.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/PoolAlloc.h \
+ deps/glslang/glslang/glslang/MachineIndependent/Scan.h \
+ deps/glslang/glslang/glslang/MachineIndependent/Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/ShHandle.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../MachineIndependent/Versions.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/InfoSink.h \
+ deps/glslang/glslang/glslang/MachineIndependent/SymbolTable.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/intermediate.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/Types.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/../Include/Common.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/../Include/BaseTypes.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/../Public/ShaderLang.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/arrays.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/../Include/ConstantUnion.h \
+ deps/glslang/glslang/glslang/MachineIndependent/localintermediate.h \
+ deps/glslang/glslang/glslang/MachineIndependent/attribute.h \
+ deps/glslang/glslang/glslang/MachineIndependent/../Include/ConstantUnion.h
