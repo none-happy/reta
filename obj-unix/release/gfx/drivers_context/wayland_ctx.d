@@ -8,6 +8,7 @@ obj-unix/release/gfx/drivers_context/wayland_ctx.o: \
  libretro-common/include/compat/../../../config.h \
  gfx/drivers_context/../../config.h \
  gfx/drivers_context/../common/wayland_common.h \
+ /usr/include/libdecor-0/libdecor.h \
  gfx/drivers_context/../common/../../input/common/wayland_common.h \
  gfx/drivers_context/../common/../../input/common/../input_driver.h \
  libretro-common/include/libretro.h \
@@ -89,6 +90,7 @@ obj-unix/release/gfx/drivers_context/wayland_ctx.o: \
  gfx/drivers_context/../common/../../input/common/../../gfx/common/wayland/idle-inhibit-unstable-v1.h \
  gfx/drivers_context/../common/../../input/common/../../gfx/common/wayland/xdg-shell.h \
  gfx/drivers_context/../common/../../input/common/../../gfx/common/wayland/xdg-decoration-unstable-v1.h \
+ gfx/drivers_context/../common/../../input/common/../../gfx/common/wayland/libdecor_sym.h \
  gfx/drivers_context/../../frontend/frontend_driver.h \
  gfx/drivers_context/../../input/input_driver.h \
  gfx/drivers_context/../../input/input_keymaps.h \

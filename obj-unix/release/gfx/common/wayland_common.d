@@ -1,5 +1,5 @@
 obj-unix/release/gfx/common/wayland_common.o: gfx/common/wayland_common.c \
- gfx/common/wayland_common.h \
+ gfx/common/wayland_common.h /usr/include/libdecor-0/libdecor.h \
  gfx/common/../../input/common/wayland_common.h \
  libretro-common/include/boolean.h \
  gfx/common/../../input/common/../input_driver.h \
@@ -83,4 +83,6 @@ obj-unix/release/gfx/common/wayland_common.o: gfx/common/wayland_common.c \
  gfx/common/../../input/common/../../gfx/common/wayland/idle-inhibit-unstable-v1.h \
  gfx/common/../../input/common/../../gfx/common/wayland/xdg-shell.h \
  gfx/common/../../input/common/../../gfx/common/wayland/xdg-decoration-unstable-v1.h \
- gfx/common/../../frontend/frontend_driver.h
+ gfx/common/../../input/common/../../gfx/common/wayland/libdecor_sym.h \
+ gfx/common/../../frontend/frontend_driver.h \
+ gfx/common/wayland/libdecor_sym.h

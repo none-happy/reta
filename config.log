@@ -6,14 +6,13 @@ Command line invocation:
 ## Core Tests. ##
 ## ----------- ##
 
-/usr/bin/ld: cannot find -lsystemd
+/usr/bin/ld: cannot find -lsystemd: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lvcos
-/usr/bin/ld: cannot find -lvchiq_arm
-/usr/bin/ld: cannot find -lbcm_host
+/usr/bin/ld: cannot find -lvcos: No such file or directory
+/usr/bin/ld: cannot find -lvchiq_arm: No such file or directory
+/usr/bin/ld: cannot find -lbcm_host: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lfribidi
-/usr/bin/ld: cannot find -lass
+/usr/bin/ld: cannot find -lass: No such file or directory
 collect2: error: ld returned 1 exit status
 .tmp.c:1:10: fatal error: sys/audioio.h: No such file or directory
     1 | #include <sys/audioio.h>
@@ -23,48 +22,48 @@ compilation terminated.
     1 | #include <soundcard.h>
       |          ^~~~~~~~~~~~~
 compilation terminated.
-/usr/bin/ld: cannot find -lossaudio
+/usr/bin/ld: cannot find -lossaudio: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lopenal
+/usr/bin/ld: cannot find -lopenal: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lmbedtls
-/usr/bin/ld: cannot find -lmbedx509
-/usr/bin/ld: cannot find -lmbedcrypto
+/usr/bin/ld: cannot find -lmbedtls: No such file or directory
+/usr/bin/ld: cannot find -lmbedx509: No such file or directory
+/usr/bin/ld: cannot find -lmbedcrypto: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -ldinput8
+/usr/bin/ld: cannot find -ldinput8: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -ld3d9
+/usr/bin/ld: cannot find -ld3d9: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -ldsound
+/usr/bin/ld: cannot find -ldsound: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -ld3dx8
+/usr/bin/ld: cannot find -ld3dx8: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -ld3dx9
+/usr/bin/ld: cannot find -ld3dx9: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lCg
-/usr/bin/ld: cannot find -lCgGL
+/usr/bin/ld: cannot find -lCg: No such file or directory
+/usr/bin/ld: cannot find -lCgGL: No such file or directory
 collect2: error: ld returned 1 exit status
 .tmp.c:1:10: fatal error: libavutil/channel_layout.h: No such file or directory
     1 | #include <libavutil/channel_layout.h>
       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-/usr/bin/ld: cannot find -lvulkan
+/usr/bin/ld: cannot find -lvulkan: No such file or directory
 collect2: error: ld returned 1 exit status
 .tmp.cxx:1:10: fatal error: glslang/Public/ShaderLang.h: No such file or directory
     1 | #include <glslang/Public/ShaderLang.h>
       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-/usr/bin/ld: cannot find -lOSDependent
+/usr/bin/ld: cannot find -lOSDependent: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lOGLCompiler
+/usr/bin/ld: cannot find -lOGLCompiler: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lglslang
-/usr/bin/ld: cannot find -lSPIRV
-/usr/bin/ld: cannot find -lHLSL
+/usr/bin/ld: cannot find -lglslang: No such file or directory
+/usr/bin/ld: cannot find -lSPIRV: No such file or directory
+/usr/bin/ld: cannot find -lHLSL: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lSPIRV
+/usr/bin/ld: cannot find -lSPIRV: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lSPIRV-Tools-opt
+/usr/bin/ld: cannot find -lSPIRV-Tools-opt: No such file or directory
 collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot find -lSPIRV-Tools
+/usr/bin/ld: cannot find -lSPIRV-Tools: No such file or directory
 collect2: error: ld returned 1 exit status
