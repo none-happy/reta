@@ -1,0 +1,35 @@
+{
+  "version": "1.5",
+  "default_core_path": "",
+  "default_core_name": "",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "sort_mode": 2,
+  "items": [
+    {
+      "path": "/home/yyh/.config/retroarch/alienar.zip",
+      "label": "",
+      "core_path": "/home/yyh/.config/retroarch/cores/mame2003_plus_libretro.so",
+      "core_name": "Arcade (MAME 2003-Plus)",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/home/yyh/Desktop/RetroArch-master/armedf.zip",
+      "label": "",
+      "core_path": "/home/yyh/.config/retroarch/cores/mame2003_plus_libretro.so",
+      "core_name": "Arcade (MAME 2003-Plus)",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/home/yyh/Desktop/RetroArch-master/armedf.zip",
+      "label": "",
+      "core_path": "/home/yyh/Desktop/RetroArch-master/mame2003_plus_libretro.so",
+      "core_name": "Arcade (MAME 2003-Plus)",
+      "crc32": "",
+      "db_name": ""
+    }
+  ]
+}

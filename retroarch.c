@@ -4748,7 +4748,7 @@ static bool retroarch_parse_input_and_config(
 #endif
       config_load(global_get_ptr());
 
-      printf("config_load_start_banty");
+      printf("config_load_start_banty");   
    }
 
    verbosity_enabled = verbosity_is_enabled();
