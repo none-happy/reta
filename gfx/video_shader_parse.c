@@ -2700,6 +2700,7 @@ const char *retroarch_get_shader_preset(void)
       fill_pathname_home_dir(app_path, sizeof(app_path));
 #else
       fill_pathname_application_dir(app_path, sizeof(app_path));
+      //printf(app_path);
 #endif
 
       

@@ -6035,7 +6035,7 @@ bool ReadConfig(const char*  filename)
    //printf("start");
 	m_filenam = filename;
 
-   //printf(m_filenam);
+   printf(m_filenam);
 
 	//m_arrm.clear(); // 删除map容器中的所有k-v�?
 	//std::ifstream infile(m_filenam.c_str());
