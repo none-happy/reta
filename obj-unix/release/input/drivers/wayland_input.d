@@ -86,7 +86,5 @@ obj-unix/release/input/drivers/wayland_input.o: \
  input/drivers/../common/../../gfx/common/wayland/idle-inhibit-unstable-v1.h \
  input/drivers/../common/../../gfx/common/wayland/xdg-shell.h \
  input/drivers/../common/../../gfx/common/wayland/xdg-decoration-unstable-v1.h \
- /usr/include/libdecor-0/libdecor.h \
- input/drivers/../common/../../gfx/common/wayland/libdecor_sym.h \
  input/drivers/../../retroarch.h input/drivers/../../verbosity.h \
  input/drivers/../../config.h

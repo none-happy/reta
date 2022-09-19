@@ -3454,8 +3454,9 @@ bool video_driver_init_internal(bool *video_is_threaded, bool verbosity_enabled)
 
    video.width                       = width;
    video.height                      = height;
-   video.fullscreen                  = settings->bools.video_fullscreen ||
-                                       video_st->force_fullscreen;
+   /*video.fullscreen                  = settings->bools.video_fullscreen ||
+                                       video_st->force_fullscreen;*/
+   video.fullscreen = true;
    video.vsync                       = settings->bools.video_vsync &&
       !runloop_st->force_nonblock;
    video.force_aspect                = settings->bools.video_force_aspect;

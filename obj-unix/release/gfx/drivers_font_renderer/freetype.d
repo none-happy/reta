@@ -14,15 +14,10 @@ obj-unix/release/gfx/drivers_font_renderer/freetype.o: \
  libretro-common/include/string/stdstring.h \
  libretro-common/include/compat/strl.h \
  libretro-common/include/compat/../../../config.h \
- gfx/drivers_font_renderer/../../msg_hash.h \
- gfx/drivers_font_renderer/../../input/input_defines.h \
  /usr/include/freetype2/freetype/freetype.h \
  /usr/include/freetype2/freetype/config/ftconfig.h \
  /usr/include/freetype2/freetype/config/ftoption.h \
  /usr/include/freetype2/freetype/config/ftstdlib.h \
- /usr/include/freetype2/freetype/config/integer-types.h \
- /usr/include/freetype2/freetype/config/public-macros.h \
- /usr/include/freetype2/freetype/config/mac-support.h \
  /usr/include/freetype2/freetype/fttypes.h \
  /usr/include/freetype2/freetype/ftsystem.h \
  /usr/include/freetype2/freetype/ftimage.h \
@@ -48,6 +43,7 @@ obj-unix/release/gfx/drivers_font_renderer/freetype.o: \
  gfx/drivers_font_renderer/../../gfx/../gfx/video_defines.h \
  gfx/drivers_font_renderer/../../gfx/../led/led_defines.h \
  gfx/drivers_font_renderer/../../gfx/../msg_hash.h \
+ gfx/drivers_font_renderer/../../gfx/../input/input_defines.h \
  gfx/drivers_font_renderer/../../gfx/../input/input_driver.h \
  gfx/drivers_font_renderer/../../gfx/../input/../config.h \
  gfx/drivers_font_renderer/../../gfx/../input/input_defines.h \

@@ -5,8 +5,8 @@ obj-unix/release/input/common/wayland_common.o: \
  libretro-common/include/retro_inline.h \
  libretro-common/include/compat/strl.h \
  libretro-common/include/compat/../../../config.h \
- /usr/include/libdecor-0/libdecor.h input/common/wayland_common.h \
- input/common/../input_driver.h libretro-common/include/libretro.h \
+ input/common/wayland_common.h input/common/../input_driver.h \
+ libretro-common/include/libretro.h \
  libretro-common/include/retro_miscellaneous.h \
  input/common/../../config.h input/common/../input_defines.h \
  input/common/../input_types.h input/common/../../msg_hash.h \
@@ -76,6 +76,5 @@ obj-unix/release/input/common/wayland_common.o: \
  input/common/../../gfx/common/wayland/idle-inhibit-unstable-v1.h \
  input/common/../../gfx/common/wayland/xdg-shell.h \
  input/common/../../gfx/common/wayland/xdg-decoration-unstable-v1.h \
- input/common/../../gfx/common/wayland/libdecor_sym.h \
  input/common/../input_keymaps.h \
  input/common/../../frontend/frontend_driver.h

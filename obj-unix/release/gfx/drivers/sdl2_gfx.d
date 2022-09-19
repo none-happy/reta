@@ -122,16 +122,14 @@ obj-unix/release/gfx/drivers/sdl2_gfx.o: gfx/drivers/sdl2_gfx.c \
  /usr/include/SDL2/SDL_keyboard.h /usr/include/SDL2/SDL_keycode.h \
  /usr/include/SDL2/SDL_scancode.h /usr/include/SDL2/SDL_mouse.h \
  /usr/include/SDL2/SDL_joystick.h /usr/include/SDL2/SDL_gamecontroller.h \
- /usr/include/SDL2/SDL_sensor.h /usr/include/SDL2/SDL_quit.h \
- /usr/include/SDL2/SDL_gesture.h /usr/include/SDL2/SDL_touch.h \
- /usr/include/SDL2/SDL_filesystem.h /usr/include/SDL2/SDL_haptic.h \
- /usr/include/SDL2/SDL_hidapi.h /usr/include/SDL2/SDL_hints.h \
+ /usr/include/SDL2/SDL_quit.h /usr/include/SDL2/SDL_gesture.h \
+ /usr/include/SDL2/SDL_touch.h /usr/include/SDL2/SDL_filesystem.h \
+ /usr/include/SDL2/SDL_haptic.h /usr/include/SDL2/SDL_hints.h \
  /usr/include/SDL2/SDL_loadso.h /usr/include/SDL2/SDL_log.h \
- /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_metal.h \
- /usr/include/SDL2/SDL_power.h /usr/include/SDL2/SDL_render.h \
+ /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
+ /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_sensor.h \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
- /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /usr/include/SDL2/SDL_syswm.h gfx/drivers/../common/sdl2_common.h \
  gfx/drivers/../common/../video_defines.h \
  gfx/drivers/../common/../font_driver.h gfx/drivers/../font_driver.h \
