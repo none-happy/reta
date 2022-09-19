@@ -60,7 +60,7 @@
 #define HAVE_DISCORD 1
 #endif
 /* #undef HAVE_DISPMANX */
-/* #undef HAVE_DRM */
+#define HAVE_DRM 1
 /* #undef HAVE_DRMINGW */
 #define HAVE_DR_MP3 1
 /* #undef HAVE_DSOUND */
@@ -74,9 +74,9 @@
 /* #undef HAVE_FLAC */
 /* #undef HAVE_FLOATHARD */
 /* #undef HAVE_FLOATSOFTFP */
-/* #undef HAVE_FONTCONFIG */
+#define HAVE_FONTCONFIG 1
 #define HAVE_FREETYPE 1
-/* #undef HAVE_GBM */
+#define HAVE_GBM 1
 #define HAVE_GDI 1
 #define HAVE_GETADDRINFO 1
 #define HAVE_GETOPT_LONG 1
@@ -97,10 +97,12 @@
 #define HAVE_IFINFO 1
 #define HAVE_IMAGEVIEWER 1
 /* #undef HAVE_JACK */
-/* #undef HAVE_KMS */
+#if __cplusplus || __STDC_VERSION__ >= 199901L
+#define HAVE_KMS 1
+#endif
 #define HAVE_LANGEXTRA 1
 /* #undef HAVE_LIBCHECK */
-/* #undef HAVE_LIBDECOR */
+#define HAVE_LIBDECOR 1
 #define HAVE_LIBRETRODB 1
 /* #undef HAVE_LIBSHAKE */
 /* #undef HAVE_LIBUSB */
@@ -226,7 +228,7 @@
 #endif
 #endif
 #define HAVE_WAYLAND_CURSOR 1
-/* #undef HAVE_WAYLAND_PROTOS */
+#define HAVE_WAYLAND_PROTOS 1
 #define HAVE_WAYLAND_SCANNER 1
 /* #undef HAVE_WIFI */
 #define HAVE_WINRAWINPUT 1
