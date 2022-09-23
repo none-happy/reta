@@ -3855,6 +3855,28 @@ int rarch_main(int argc, char *argv[], void *data)
 
    ui_companion_driver_init_first();
 #if !defined(HAVE_MAIN) || defined(HAVE_QT)
+
+   printf("313131_iunt3\n");
+
+   {
+      content_ctx_info_t info;
+
+      info.argc            = 0;
+      info.argv            = NULL;
+      info.args            = NULL;
+      info.environ_get     = NULL;
+
+      if (!task_push_load_content_with_new_core_from_menu(
+               "/home/yyh/Desktop/reta/mame2003_plus_libretro.so",
+               "/home/yyh/Desktop/reta/alienar.zip",
+               &info,
+               CORE_TYPE_PLAIN,
+               NULL,
+               NULL))
+               {
+                     printf("\n4r342\n");
+               }
+   }
    for (;;)
    {
       int ret;
@@ -5491,7 +5513,11 @@ bool retroarch_main_init(int argc, char *argv[])
 #endif
          );
 #endif
-   drivers_init(settings, DRIVERS_CMD_ALL, verbosity_enabled);
+   printf("\ndadada\n");
+
+  drivers_init(settings, DRIVERS_CMD_ALL, verbosity_enabled);
+   printf("1111\n");
+
 #ifdef HAVE_COMMAND
    input_driver_deinit_command(input_st);
    input_driver_init_command(input_st, settings);

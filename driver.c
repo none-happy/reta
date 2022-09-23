@@ -435,7 +435,7 @@ void driver_set_nonblock_state(void)
       ? audio_st->chunk_nonblock_size
       : audio_st->chunk_block_size;
 }
-
+bool bIsAdd=true;
 void drivers_init(
       settings_t *settings,
       int flags,
@@ -470,6 +470,7 @@ void drivers_init(
    if (menu_st)
       menu_st->data_own = true;
 #endif
+   printf("23131\n");
 
    if (flags & (DRIVER_VIDEO_MASK | DRIVER_AUDIO_MASK))
       driver_adjust_system_rates(
@@ -480,6 +481,8 @@ void drivers_init(
                                  settings->uints.video_swap_interval
                                  );
 
+
+   printf("1111\n");
    /* Initialize video driver */
    if (flags & DRIVER_VIDEO_MASK)
    {
@@ -487,6 +490,8 @@ void drivers_init(
          VIDEO_DRIVER_GET_HW_CONTEXT_INTERNAL(video_st);
 
       video_st->frame_time_count = 0;
+
+      printf("22222\n");
 
       video_driver_lock_new();
 #ifdef HAVE_VIDEO_FILTER
@@ -503,7 +508,15 @@ void drivers_init(
       video_st->cache_context_ack = false;
       runloop_st->frame_time_last = 0;
    }
-
+   printf("\ndada412\n");
+   if(bIsAdd)
+   {
+      printf("dada\n");
+      bIsAdd=false;
+      //return; 
+   }
+   printf("2loadsece\n");
+   //
    /* Initialize audio driver */
    if (flags & DRIVER_AUDIO_MASK)
    {
@@ -562,12 +575,14 @@ void drivers_init(
          /* Resource leaks will follow if camera is initialized twice. */
          if (!camera_st->data)
          {
+            
             if (!camera_driver_find_driver("camera driver",
                      verbosity_enabled))
                retroarch_fail(1, "find_camera_driver()");
 
             if (camera_st->driver)
             {
+               
                camera_st->data = camera_st->driver->init(
                      *settings->arrays.camera_device ?
                      settings->arrays.camera_device : NULL,
@@ -576,6 +591,7 @@ void drivers_init(
                      settings->uints.camera_width  : camera_st->cb.width,
                      settings->uints.camera_height ?
                      settings->uints.camera_height : camera_st->cb.height);
+                     
 
                if (!camera_st->data)
                {
@@ -638,7 +654,7 @@ void drivers_init(
    else
 #endif
    {
-      gfx_display_init_first_driver(p_disp, video_is_threaded);
+     gfx_display_init_first_driver(p_disp, video_is_threaded);
    }
 
 #ifdef HAVE_MENU
