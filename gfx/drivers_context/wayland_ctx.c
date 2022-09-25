@@ -396,9 +396,10 @@ static bool gfx_ctx_wl_set_video_mode(void *data,
       bool fullscreen)
 {
    gfx_ctx_wayland_data_t *wl   = (gfx_ctx_wayland_data_t*)data;
+   printf("22221111111111111\n");
 
-   if (!gfx_ctx_wl_set_video_mode_common_size(wl, width, height))
-      goto error;
+   //if (!gfx_ctx_wl_set_video_mode_common_size(wl, width, height))
+     // goto error;
 
 #ifdef HAVE_EGL
    EGLint egl_attribs[16];
@@ -420,7 +421,7 @@ static bool gfx_ctx_wl_set_video_mode(void *data,
       goto error;
    egl_set_swap_interval(&wl->egl, wl->egl.interval);
 #endif
-
+   printf("44441111111111111\n");
    if (!gfx_ctx_wl_set_video_mode_common_fullscreen(wl, fullscreen))
       goto error;
 

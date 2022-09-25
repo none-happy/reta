@@ -15,14 +15,16 @@ obj-unix/release/input/drivers_joypad/sdl_joypad.o: \
  /usr/include/SDL2/SDL_keyboard.h /usr/include/SDL2/SDL_keycode.h \
  /usr/include/SDL2/SDL_scancode.h /usr/include/SDL2/SDL_mouse.h \
  /usr/include/SDL2/SDL_joystick.h /usr/include/SDL2/SDL_gamecontroller.h \
- /usr/include/SDL2/SDL_quit.h /usr/include/SDL2/SDL_gesture.h \
- /usr/include/SDL2/SDL_touch.h /usr/include/SDL2/SDL_filesystem.h \
- /usr/include/SDL2/SDL_haptic.h /usr/include/SDL2/SDL_hints.h \
+ /usr/include/SDL2/SDL_sensor.h /usr/include/SDL2/SDL_quit.h \
+ /usr/include/SDL2/SDL_gesture.h /usr/include/SDL2/SDL_touch.h \
+ /usr/include/SDL2/SDL_filesystem.h /usr/include/SDL2/SDL_haptic.h \
+ /usr/include/SDL2/SDL_hidapi.h /usr/include/SDL2/SDL_hints.h \
  /usr/include/SDL2/SDL_loadso.h /usr/include/SDL2/SDL_log.h \
- /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
- /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_sensor.h \
+ /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_metal.h \
+ /usr/include/SDL2/SDL_power.h /usr/include/SDL2/SDL_render.h \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
+ /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  input/drivers_joypad/../input_driver.h libretro-common/include/boolean.h \
  libretro-common/include/retro_inline.h \
  libretro-common/include/libretro.h \

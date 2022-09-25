@@ -116,4 +116,5 @@ obj-unix/release/gfx/drivers/gl2.o: gfx/drivers/gl2.c \
  gfx/drivers/../../menu/../gfx/font_driver.h \
  gfx/drivers/../../menu/../gfx/font_driver.h gfx/drivers/../gfx_widgets.h \
  gfx/drivers/../../config.h libretro-common/include/queues/fifo_queue.h \
- gfx/drivers/../gfx_animation.h gfx/drivers/../gfx_display.h
+ gfx/drivers/../gfx_animation.h gfx/drivers/../gfx_display.h \
+ deps/../sqlite3.h

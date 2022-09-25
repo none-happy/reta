@@ -482,7 +482,7 @@ void drivers_init(
                                  );
 
 
-   printf("1111\n");
+  // printf("1111\n");
    /* Initialize video driver */
    if (flags & DRIVER_VIDEO_MASK)
    {
@@ -491,7 +491,7 @@ void drivers_init(
 
       video_st->frame_time_count = 0;
 
-      printf("22222\n");
+      //printf("22222\n");
       
       video_driver_lock_new();
 
@@ -510,15 +510,7 @@ void drivers_init(
       video_st->cache_context_ack = false;
       runloop_st->frame_time_last = 0;
    }
-   printf("\ndada412\n");
-   if(bIsAdd)
-   {
-      printf("dada\n");
-      //bIsAdd=false;
-      return; 
-   }
-   printf("2loadsece\n");
-   //
+   
    /* Initialize audio driver */
    if (flags & DRIVER_AUDIO_MASK)
    {
@@ -538,6 +530,9 @@ void drivers_init(
    {
       struct retro_system_av_info *av_info = &video_st->av_info;
       float refresh_rate                   = av_info->timing.fps;
+
+      settings->bools.video_fullscreen =true;
+      
       unsigned autoswitch_refresh_rate     = settings->uints.video_autoswitch_refresh_rate;
       bool exclusive_fullscreen            = settings->bools.video_fullscreen && !settings->bools.video_windowed_fullscreen;
       bool windowed_fullscreen             = settings->bools.video_fullscreen && settings->bools.video_windowed_fullscreen;

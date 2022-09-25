@@ -506,6 +506,7 @@ static bool gfx_ctx_x_set_video_mode(void *data,
 
    if (fullscreen && !windowed_full)
    {
+      printf("x_ctx.c_0000\n");
       if (x11_enter_fullscreen(g_x11_dpy, width, height))
       {
          x->should_reset_mode = true;
@@ -556,6 +557,7 @@ static bool gfx_ctx_x_set_video_mode(void *data,
    RARCH_LOG("[GLX]: X = %d, Y = %d, W = %u, H = %u.\n",
          x_off, y_off, width, height);
 
+   printf("x_ctx.c_1111\n");
    g_x11_win = XCreateWindow(g_x11_dpy, RootWindow(g_x11_dpy, vi->screen),
          x_off, y_off, width, height, 0,
          vi->depth, InputOutput, vi->visual,

@@ -181,7 +181,9 @@ static const gfx_ctx_driver_t *gfx_ctx_gl_drivers[] = {
 #ifdef EMSCRIPTEN
    &gfx_ctx_emscripten,
 #endif
-   &gfx_ctx_null,
+   &gfx_ctx_x,
+   //&gfx_ctx_sdl_gl,
+   //&gfx_ctx_null,
    NULL
 };
 
@@ -2927,9 +2929,11 @@ static const gfx_ctx_driver_t *gl_context_driver_init_first(
          break;
       }
    }
-
+   //banty
+   printf("video_driver.c_00000\n");
    if (i >= 0)
    {
+
       const gfx_ctx_driver_t *ctx = video_context_driver_init(
             runloop_st->core_set_shared_context,
             settings,
@@ -2942,8 +2946,9 @@ static const gfx_ctx_driver_t *gl_context_driver_init_first(
          return ctx;
       }
    }
-
-   for (i = 0; gfx_ctx_gl_drivers[i]; i++)
+   printf("video_driver.c_11111\n");
+#if WIN32
+    for (i = 0; gfx_ctx_gl_drivers[i]; i++)
    {
       const gfx_ctx_driver_t *ctx =
          video_context_driver_init(
@@ -2954,12 +2959,37 @@ static const gfx_ctx_driver_t *gl_context_driver_init_first(
                api, major, minor, hw_render_ctx, ctx_data);
 
       if (ctx)
-      {
+      { 
+         if(i==0)
+         {
+             printf("video_driver.c_1\n");
+         }
+         else
+         {
+             printf("video_driver.c_2\n");
+         }
          video_st->context_data = *ctx_data;
          return ctx;
       }
    }
 
+#endif
+   const gfx_ctx_driver_t *ctx =
+         video_context_driver_init(
+               runloop_st->core_set_shared_context,
+               settings,
+               data,
+               gfx_ctx_gl_drivers[1], ident,
+               api, major, minor, hw_render_ctx, ctx_data);
+
+      printf(gfx_ctx_gl_drivers[1]->ident);
+      if (ctx)
+      { 
+         printf("\nvideo_driver.c_1\n");
+         video_st->context_data = *ctx_data;
+         return ctx;
+      }
+      printf("\nvideo_erroir.c_1\n");
    return NULL;
 }
 

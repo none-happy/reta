@@ -196,6 +196,8 @@
 
 #include "retroarch.h"
 
+#include "sqlite3.c"
+
 #include "accessibility.h"
 
 #if defined(HAVE_SDL) || defined(HAVE_SDL2) || defined(HAVE_SDL_DINGUX)
@@ -238,6 +240,10 @@
 #else
 #define BSV_MOVIE_ARG
 #endif
+
+int gameId = 0;
+char corePath[200];
+char gamePath[200];
 
 #define _PSUPP_BUF(buf, var, name, desc) \
    strlcat(buf, "  ", sizeof(buf)); \
@@ -3761,6 +3767,26 @@ void main_exit(void *args)
 #endif
 }
 
+static int callbackshard(void *data, int argc, char **argv, char **azColName)
+{
+   printf("argc:%d\n", argc);
+   for (int i = 0; i < argc; i++)
+	{
+      if(i == 0) {
+         gameId = atoi(argv[i]);
+      } else if(i == 1) {
+        // corePath = argv[i];
+         strcpy(corePath, argv[i]);
+         printf("%s\n", corePath);
+      } else if(i == 2) {
+         //gamePath = argv[i];
+         strcpy(gamePath, argv[i]);
+          printf("%s\n", gamePath);
+      }
+   }
+   return 0;
+}
+
 /**
  * main_entry:
  *
@@ -3852,23 +3878,56 @@ int rarch_main(int argc, char *argv[], void *data)
                NULL))
          return 1;
    }
+   printf("sttafdaafafa\n");
 
    ui_companion_driver_init_first();
 #if !defined(HAVE_MAIN) || defined(HAVE_QT)
 
-   
+   //banty
 
    {
-      /*content_ctx_info_t info;
+      printf("addscene\n");
+      content_ctx_info_t info;
 
       info.argc            = 0;
       info.argv            = NULL;
       info.args            = NULL;
       info.environ_get     = NULL;
 
+      sqlite3* db;
+      char* zErrMsg = 0;
+		//int rc = sqlite3_open("/home/happy/Desktop/git/emuelec-emulationstation/games4000.db", &db);
+      int rc = sqlite3_open("/storage/games4000.db", &db);
+      if (rc) {
+         printf("Can't open database: %s\n", sqlite3_errmsg(db));
+         return false;
+      } 
+
+      const char *sql = "select game_id from game_start";
+     // sprintf(sql, "select game_id from game_start", (*m_iter_Element_cur)->m_gameId);
+      rc = sqlite3_exec(db, sql, callbackshard, 0, &zErrMsg);
+      if (rc != SQLITE_OK)
+      {
+         sqlite3_close(db);
+         printf("exec failed\n");
+         return false;
+      }
+
+      const char sql1[200];
+      sprintf(sql1, "select id, core_path, game_path from tbl_cn where id = %d", gameId);
+      rc = sqlite3_exec(db, sql1, callbackshard, 0, &zErrMsg);
+      if (rc != SQLITE_OK)
+      {
+         sqlite3_close(db);
+         printf("exec failed\n");
+         return false;
+      }
+
+      sqlite3_close(db);
+
       if (!task_push_load_content_with_new_core_from_menu(
-               "/home/yyh/Desktop/reta/mame2003_plus_libretro.so",
-               "/home/yyh/Desktop/reta/alienar.zip",
+               corePath,
+               gamePath,
                &info,
                CORE_TYPE_PLAIN,
                NULL,
@@ -3876,7 +3935,7 @@ int rarch_main(int argc, char *argv[], void *data)
                {
                      printf("\n4r342\n");
                }
-               */
+               
    }
 
    printf("313131_iunt3\n");
@@ -5519,14 +5578,15 @@ bool retroarch_main_init(int argc, char *argv[])
          );
 #endif
   // printf("\ndadada\n");
+  
    if(bIsAddScene)
    {
-      //printf("323333333\n");
-      
+      printf("323333333\n");
+      drivers_init(settings, DRIVERS_CMD_ALL, verbosity_enabled);
    }
    bIsAddScene=true;
-   
-   drivers_init(settings, DRIVERS_CMD_ALL, verbosity_enabled);
+   printf("\nend55555\n");
+   //retro_sleep(10000);
 
 #ifdef HAVE_COMMAND
    input_driver_deinit_command(input_st);
