@@ -470,7 +470,7 @@ void drivers_init(
    if (menu_st)
       menu_st->data_own = true;
 #endif
-   printf("23131\n");
+   printf("\n23131\n");
 
    if (flags & (DRIVER_VIDEO_MASK | DRIVER_AUDIO_MASK))
       driver_adjust_system_rates(
@@ -492,8 +492,10 @@ void drivers_init(
       video_st->frame_time_count = 0;
 
       printf("22222\n");
-
+      
       video_driver_lock_new();
+
+      
 #ifdef HAVE_VIDEO_FILTER
       video_driver_filter_free();
 #endif
@@ -512,8 +514,8 @@ void drivers_init(
    if(bIsAdd)
    {
       printf("dada\n");
-      bIsAdd=false;
-      //return; 
+      //bIsAdd=false;
+      return; 
    }
    printf("2loadsece\n");
    //

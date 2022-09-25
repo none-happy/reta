@@ -3686,7 +3686,14 @@ static void *gl2_init(const video_info_t *video,
       win_width  = full_x;
       win_height = full_y;
    }
-
+   if(video->fullscreen )
+   {
+      printf("Scene\n");
+   }
+   else
+   {
+      printf("noScene\n");
+   }
    if (     !gl->ctx_driver->set_video_mode
          || !gl->ctx_driver->set_video_mode(gl->ctx_data,
             win_width, win_height, video->fullscreen))

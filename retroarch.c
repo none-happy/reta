@@ -3856,10 +3856,10 @@ int rarch_main(int argc, char *argv[], void *data)
    ui_companion_driver_init_first();
 #if !defined(HAVE_MAIN) || defined(HAVE_QT)
 
-   printf("313131_iunt3\n");
+   
 
    {
-      content_ctx_info_t info;
+      /*content_ctx_info_t info;
 
       info.argc            = 0;
       info.argv            = NULL;
@@ -3876,7 +3876,11 @@ int rarch_main(int argc, char *argv[], void *data)
                {
                      printf("\n4r342\n");
                }
+               */
    }
+
+   printf("313131_iunt3\n");
+
    for (;;)
    {
       int ret;
@@ -5236,6 +5240,7 @@ static void retroarch_validate_cpu_features(void)
  *
  * @return true on success, otherwise false if there was an error.
  **/
+bool bIsAddScene=false;
 bool retroarch_main_init(int argc, char *argv[])
 {
 #if defined(DEBUG) && defined(HAVE_DRMINGW)
@@ -5513,10 +5518,15 @@ bool retroarch_main_init(int argc, char *argv[])
 #endif
          );
 #endif
-   printf("\ndadada\n");
-
-  drivers_init(settings, DRIVERS_CMD_ALL, verbosity_enabled);
-   printf("1111\n");
+  // printf("\ndadada\n");
+   if(bIsAddScene)
+   {
+      //printf("323333333\n");
+      
+   }
+   bIsAddScene=true;
+   
+   drivers_init(settings, DRIVERS_CMD_ALL, verbosity_enabled);
 
 #ifdef HAVE_COMMAND
    input_driver_deinit_command(input_st);
@@ -5618,7 +5628,7 @@ bool retroarch_ctl(enum rarch_ctl_state state, void *data)
 #endif
 #ifdef HAVE_PATCH
       case RARCH_CTL_IS_BPS_PREF:
-         return p_rarch->rarch_bps_pref;
+         return p_rarch->rarch_bps_pref; 
       case RARCH_CTL_UNSET_BPS_PREF:
          p_rarch->rarch_bps_pref = false;
          break;
