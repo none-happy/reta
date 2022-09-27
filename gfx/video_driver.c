@@ -181,7 +181,7 @@ static const gfx_ctx_driver_t *gfx_ctx_gl_drivers[] = {
 #ifdef EMSCRIPTEN
    &gfx_ctx_emscripten,
 #endif
-   &gfx_ctx_x,
+   //&gfx_ctx_x,
    //&gfx_ctx_sdl_gl,
    &gfx_ctx_null,
    NULL
