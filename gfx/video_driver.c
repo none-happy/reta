@@ -183,7 +183,7 @@ static const gfx_ctx_driver_t *gfx_ctx_gl_drivers[] = {
 #endif
    &gfx_ctx_x,
    //&gfx_ctx_sdl_gl,
-   //&gfx_ctx_null,
+   &gfx_ctx_null,
    NULL
 };
 
@@ -2947,7 +2947,7 @@ static const gfx_ctx_driver_t *gl_context_driver_init_first(
       }
    }
    printf("video_driver.c_11111\n");
-#if WIN32
+#if !WIN32
     for (i = 0; gfx_ctx_gl_drivers[i]; i++)
    {
       const gfx_ctx_driver_t *ctx =
@@ -2974,7 +2974,7 @@ static const gfx_ctx_driver_t *gl_context_driver_init_first(
    }
 
 #endif
-   const gfx_ctx_driver_t *ctx =
+  /* const gfx_ctx_driver_t *ctx =
          video_context_driver_init(
                runloop_st->core_set_shared_context,
                settings,
@@ -2989,7 +2989,7 @@ static const gfx_ctx_driver_t *gl_context_driver_init_first(
          video_st->context_data = *ctx_data;
          return ctx;
       }
-      printf("\nvideo_erroir.c_1\n");
+      printf("\nvideo_erroir.c_1\n");*/
    return NULL;
 }
 
