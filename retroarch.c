@@ -240,7 +240,7 @@
 #else
 #define BSV_MOVIE_ARG
 #endif
-
+bool bIsShowScene=true;
 int gameId = 0;
 char corePath[200];
 char gamePath[200];
@@ -1987,7 +1987,10 @@ bool command_event(enum event_command cmd, void *data)
          }
          break;
       case CMD_EVENT_CLOSE_CONTENT:
-         
+
+         printf("exit111111111111111111111111111");
+         if (!retroarch_main_quit())
+            return false;
          //sdl_exit();
 #ifdef HAVE_MENU
          /* Closing content via hotkey requires toggling menu
@@ -2002,9 +2005,13 @@ bool command_event(enum event_command cmd, void *data)
          //command_event(CMD_EVENT_QUIT, NULL);
 #endif
          break;
-      case CMD_EVENT_QUIT:
-         if (!retroarch_main_quit())
-            return false;
+      case CMD_EVENT_QUIT://banty
+         printf("exit\n");
+        // if (!retroarch_main_quit())
+           // return false;
+
+         bIsShowScene=false;
+         printf("exit111\n");
          break;
       case CMD_EVENT_CHEEVOS_HARDCORE_MODE_TOGGLE:
 #ifdef HAVE_CHEEVOS
@@ -2105,6 +2112,7 @@ bool command_event(enum event_command cmd, void *data)
             return false;
          break;
       case CMD_EVENT_AUDIO_MUTE_TOGGLE:
+
          {
             audio_driver_state_t
                *audio_st                       = audio_state_get_ptr();
@@ -3798,6 +3806,7 @@ static int callbackshard(void *data, int argc, char **argv, char **azColName)
  *
  * Returns: varies per platform.
  **/
+
 int rarch_main(int argc, char *argv[], void *data)
 {
    struct rarch_state *p_rarch         = &rarch_st;
@@ -3896,8 +3905,8 @@ int rarch_main(int argc, char *argv[], void *data)
 
       sqlite3* db;
       char* zErrMsg = 0;
-		//int rc = sqlite3_open("/home/happy/Desktop/git/emuelec-emulationstation/games4000.db", &db);
-      int rc = sqlite3_open("/storage/games4000.db", &db);
+		int rc = sqlite3_open("/home/happy/Desktop/git/emuelec-emulationstation/games4000.db", &db);
+      //int rc = sqlite3_open("/storage/games4000.db", &db);
       if (rc) {
          printf("Can't open database: %s\n", sqlite3_errmsg(db));
          return false;
@@ -3940,7 +3949,8 @@ int rarch_main(int argc, char *argv[], void *data)
 
    printf("313131_iunt3\n");
 
-   for (;;)
+   //for (;;)
+   while (bIsShowScene)
    {
       int ret;
       bool app_exit     = false;
@@ -6260,7 +6270,7 @@ void retroarch_fail(int error_code, const char *error)
    longjmp(global->error_sjlj_context, error_code);
 }
 
-bool retroarch_main_quit(void)
+bool retroarch_main_quit(void)//banty
 {
    runloop_state_t *runloop_st   = runloop_state_get_ptr();
    video_driver_state_t*video_st = video_state_get_ptr();
