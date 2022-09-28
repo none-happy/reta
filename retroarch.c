@@ -3905,8 +3905,8 @@ int rarch_main(int argc, char *argv[], void *data)
 
       sqlite3* db;
       char* zErrMsg = 0;
-		int rc = sqlite3_open("/home/happy/Desktop/git/emuelec-emulationstation/games4000.db", &db);
-      //int rc = sqlite3_open("/storage/games4000.db", &db);
+		//int rc = sqlite3_open("/home/happy/Desktop/git/emuelec-emulationstation/games4000.db", &db);
+      int rc = sqlite3_open("/storage/games4000.db", &db);
       if (rc) {
          printf("Can't open database: %s\n", sqlite3_errmsg(db));
          return false;
