@@ -3932,6 +3932,9 @@ int rarch_main(int argc, char *argv[], void *data)
          return false;
       }
 
+      printf("core:%s\n", corePath);
+       printf("gamePath:%s\n", gamePath);
+
       sqlite3_close(db);
 
       if (!task_push_load_content_with_new_core_from_menu(
